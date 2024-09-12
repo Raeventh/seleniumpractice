@@ -31,14 +31,16 @@ public class Assignment6 {
 		
 		String VerifyingText= driver.switchTo().alert().getText();
 		
-		//Trying out the git version control here:
+		
+		
 		
 		
 		if(VerifyingText.contains(text))
 		{
 			driver.switchTo().alert().accept();
 			System.out.println("Gotcha");
-			System.out.println("Whistle podu");
+			System.out.println("Whistle podu");//Trying out the git version control here
+			System.out.println("GOAT"); //pushing to github and pulling it from cloneproject
 		}
 		else
 		{
