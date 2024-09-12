@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Assignment6 {
@@ -13,7 +13,7 @@ public class Assignment6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		WebDriver driver= new ChromeDriver();
+		WebDriver driver= new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -31,10 +31,14 @@ public class Assignment6 {
 		
 		String VerifyingText= driver.switchTo().alert().getText();
 		
+		//Trying out the git version control here:
+		
+		
 		if(VerifyingText.contains(text))
 		{
 			driver.switchTo().alert().accept();
 			System.out.println("Gotcha");
+			System.out.println("Whistle podu");
 		}
 		else
 		{
