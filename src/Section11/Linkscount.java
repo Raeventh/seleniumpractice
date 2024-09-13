@@ -24,6 +24,8 @@ public class Linkscount {
 		
 		System.out.println(driver.findElements(By.tagName("a")).size());
 		
+		System.out.println("writing this in developer branch");//checking the Branching & Merge
+		
 		WebElement footer = driver.findElement(By.id("gf-BIG"));
 		
 		WebElement column = footer.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
